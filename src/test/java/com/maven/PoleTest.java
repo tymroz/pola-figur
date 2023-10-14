@@ -1,13 +1,15 @@
 package com.maven;
 
 import static org.junit.Assert.assertEquals;
+
+import org.junit.Assert;
 import org.junit.Test;
 
 public class PoleTest {
     @Test
     public void testKwadrat() {
         Kwadrat k = new Kwadrat();
-        assertEquals(25.0, k.pole(5.0), 0.001);
+        Assert.assertEquals(25.0, k.pole(5.0), 0.001);
     }
 
     @Test
