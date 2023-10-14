@@ -10,29 +10,26 @@ public class Main {
         String figura = scanner.nextLine().toLowerCase();
 
         switch (figura) {
-            case "kolo": {
+            case "kolo":
                 Kolo kolo = new Kolo();
                 System.out.print("Podaj promien kola: ");
                 double promien = scanner.nextDouble();
                 System.out.println("Pole " + figura + " wynosi: " + kolo.pole(promien));
-            }
-            break;
-            case "kwadrat": {
+                break;
+            case "kwadrat":
                 Kwadrat kwadrat = new Kwadrat();
                 System.out.print("Podaj dlugosc boku kwadratu: ");
                 double bok = scanner.nextDouble();
                 System.out.println("Pole " + figura + " wynosi: " + kwadrat.pole(bok));
-            }
-            break;
-            case "prostokat": {
+                break;
+            case "prostokat":
                 Prostokat prostokat = new Prostokat();
                 System.out.print("Podaj dlugosc pierwszego boku prostokata: ");
                 double bokA = scanner.nextDouble();
                 System.out.print("Podaj dlugosc drugiego boku prostokata: ");
                 double bokB = scanner.nextDouble();
                 System.out.println("Pole " + figura + " wynosi: " + prostokat.pole(bokA, bokB));
-            }
-            break;
+                break;
             default:
                 System.out.println("Nieprawidlowy wybor figury.");
                 break;
