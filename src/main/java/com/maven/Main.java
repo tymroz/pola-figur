@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Wybierz figurę (kolo, kwadrat, prostokat): ");
+        System.out.println("Wybierz figure (kolo, kwadrat, prostokat): ");
         String figura = scanner.nextLine().toLowerCase();
 
         switch (figura) {
