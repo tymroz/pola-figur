@@ -13,24 +13,24 @@ public class Main {
             case "kolo": {
                 Kolo kolo = new Kolo();
                 out.print("Podaj promien kola: ");
-                kolo.promien = scanner.nextDouble();
-                out.println("Pole " + figura + " wynosi: " + kolo.pole());
+                double promien = scanner.nextDouble();
+                out.println("Pole " + figura + " wynosi: " + kolo.pole(promien));
             };
             break;
             case "kwadrat": {
                 Kwadrat kwadrat = new Kwadrat();
                 out.print("Podaj dlugosc boku kwadratu: ");
-                kwadrat.bok = scanner.nextDouble();
-                out.println("Pole " + figura + " wynosi: " + kwadrat.pole());
+                double bok = scanner.nextDouble();
+                out.println("Pole " + figura + " wynosi: " + kwadrat.pole(bok));
             };
             break;
             case "prostokat": {
                 Prostokat prostokat = new Prostokat();
                 out.print("Podaj dlugosc pierwszego boku prostokata: ");
-                prostokat.bokA = scanner.nextDouble();
+                double bokA = scanner.nextDouble();
                 out.print("Podaj dlugosc drugiego boku prostokata: ");
-                prostokat.bokB = scanner.nextDouble();
-                out.println("Pole " + figura + " wynosi: " + prostokat.pole());
+                double bokB = scanner.nextDouble();
+                out.println("Pole " + figura + " wynosi: " + prostokat.pole(bokA, bokB));
             };
             break;
             default:
