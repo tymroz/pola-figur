@@ -6,14 +6,14 @@ import org.junit.Test;
 public class PoleTest {
     @Test
     public void testKwadrat() {
-        Kwadrat k = new Kwadrat();
-        assertEquals(25.0, k.pole(5.0), 0.001);
+        Kwadrat kwadrat = new Kwadrat();
+        assertEquals(25.0, kwadrat.pole(5.0), 0.001);
     }
 
     @Test
     public void testProstokat() {
-        Prostokat p = new Prostokat();
-        assertEquals(56.0, p.pole(8.0,7.0), 0.001);
+        Prostokat prostokat = new Prostokat();
+        assertEquals(56.0, prostokat.pole(8.0,7.0), 0.001);
     }
 
     @Test
