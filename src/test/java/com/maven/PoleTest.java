@@ -12,13 +12,13 @@ public class PoleTest {
 
     @Test
     public void testProstokat() {
-        Prostokat k = new Prostokat();
-        assertEquals(56.0, k.pole(8.0,7.0), 0.001);
+        Prostokat p = new Prostokat();
+        assertEquals(56.0, p.pole(8.0,7.0), 0.001);
     }
 
     @Test
     public void testKolo() {
-        Kolo k = new Kolo();
-        assertEquals(Math.PI * Math.pow(5.0, 2), k.pole(5.0), 0.001);
+        Kolo kolo = new Kolo();
+        assertEquals(Math.PI * Math.pow(5.0, 2), kolo.pole(5.0), 0.001);
     }
 }
