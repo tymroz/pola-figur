@@ -25,10 +25,10 @@ public class Main {
             case "prostokat":
                 Prostokat prostokat = new Prostokat();
                 System.out.print("Podaj dlugosc pierwszego boku prostokata: ");
-                double bokA = scanner.nextDouble();
+                double bok1 = scanner.nextDouble();
                 System.out.print("Podaj dlugosc drugiego boku prostokata: ");
-                double bokB = scanner.nextDouble();
-                System.out.println("Pole " + figura + " wynosi: " + prostokat.pole(bokA, bokB));
+                double bok2 = scanner.nextDouble();
+                System.out.println("Pole " + figura + " wynosi: " + prostokat.pole(bok1, bok2));
                 break;
             default:
                 System.out.println("Nieprawidlowy wybor figury.");
